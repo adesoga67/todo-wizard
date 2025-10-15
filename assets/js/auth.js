@@ -88,7 +88,7 @@ const loginTab = document.getElementById('login-tab');
         message.className = 'message success';
         // Redirect to app
         setTimeout(() => {
-          window.location.href = 'main.html';
+          window.location.href = './main.html';
         }, 1000);
       }, 1000);
     });
@@ -128,7 +128,7 @@ const loginTab = document.getElementById('login-tab');
         message.className = 'message success';
         // Redirect to app
         setTimeout(() => {
-          window.location.href = 'main.html';
+          window.location.href = './main.html';
         }, 1000);
       }, 1000);
     });
