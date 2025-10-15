@@ -139,7 +139,7 @@
     // Logout button
     logoutBtn.addEventListener('click', () => {
       if (confirm('Are you sure you want to logout?')) {
-        alert('Logout functionality would redirect to login page');
+        window.location.href = './index.html';
       }
     });
 
