@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoMVP - Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/todo.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">TodoMVP</h1>
+    <div class="header-info">
+      <span class="task-count" id="task-count">0 tasks</span>
+      <button id="logout-btn" class="btn btn-secondary">Logout</button>
+    </div>
+  </header>
+
+  <main class="todo-container">
+    <div class="todo-header">
+      <h2>Your Tasks</h2>
+      <p>Stay organized and productive</p>
+    </div>
+
+    <form id="todo-form">
+      <input 
+        type="text" 
+        id="todo-input" 
+        placeholder="What needs to be done?" 
+        required 
+        autocomplete="off"
+      />
+      <button type="submit" class="btn primary">Add Task</button>
+    </form>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="active">Active</button>
+      <button class="filter-tab" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+  </main>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
