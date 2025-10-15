@@ -103,10 +103,6 @@ If connected to external APIs, ensure compliance with Apple’s App Store privac
 
 ---
 
-## 📄 License
-
-This project is distributed under the **MIT License** — free for personal and commercial use with proper attribution.
-
 ---
 
 ## 🍏 Apple Submission Note
