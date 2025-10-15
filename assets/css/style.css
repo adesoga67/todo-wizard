@@ -1,0 +1,291 @@
+/* ========== Global Reset ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+      color: #1d1d1f;
+      background: #fbfbfd;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ========== Header ========== */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 5%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+
+    .btn {
+      background: #007aff;
+      color: #fff;
+      padding: 0.65rem 1.5rem;
+      border-radius: 980px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      cursor: pointer;
+      letter-spacing: -0.2px;
+    }
+
+    .btn:hover {
+      background: #0051d5;
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+      padding: 0.85rem 2rem;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 16px rgba(0, 122, 255, 0.25);
+    }
+
+    .btn.primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0, 122, 255, 0.35);
+    }
+
+    /* ========== Hero Section ========== */
+    .hero {
+      text-align: center;
+      padding: 6rem 5% 8rem;
+      background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -25%;
+      width: 150%;
+      height: 150%;
+      background: radial-gradient(circle, rgba(0, 122, 255, 0.08) 0%, transparent 70%);
+      animation: pulse 8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h2 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: #1d1d1f;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: -2px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      color: #86868b;
+      margin-bottom: 2.5rem;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+    }
+
+    /* ========== Features Section ========== */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 5rem 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: left;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #007aff, #5856d6, #ff2d55);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .feature:hover::before {
+      transform: scaleX(1);
+    }
+
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      filter: grayscale(0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover .feature-icon {
+      transform: scale(1.1);
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      color: #1d1d1f;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .feature p {
+      color: #86868b;
+      font-size: 1rem;
+      line-height: 1.6;
+      letter-spacing: -0.2px;
+    }
+
+    /* ========== Stats Section ========== */
+    .stats {
+      background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+      padding: 4rem 5%;
+      text-align: center;
+      color: white;
+    }
+
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .stat {
+      padding: 1rem;
+    }
+
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -1px;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      opacity: 0.9;
+      font-weight: 400;
+    }
+
+    /* ========== Footer ========== */
+    .footer {
+      text-align: center;
+      padding: 3rem 5%;
+      background: #f5f5f7;
+      font-size: 0.9rem;
+      color: #86868b;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer a {
+      color: #007aff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer a:hover {
+      color: #0051d5;
+      text-decoration: underline;
+    }
+
+    /* ========== Responsive Design ========== */
+    @media (max-width: 768px) {
+      .header {
+        padding: 1rem 5%;
+      }
+
+      .hero {
+        padding: 4rem 5% 5rem;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+        padding: 3rem 5%;
+      }
+
+      .stats-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 1.3rem;
+      }
+
+      .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
+
+      .btn.primary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+      }
+    }

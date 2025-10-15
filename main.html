@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TodoMVP - Dashboard</title>
+  <link rel="stylesheet" href="assets/css/todo.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">TodoMVP</h1>
+    <button id="logout-btn" class="btn">Logout</button>
+  </header>
+
+  <main class="todo-container">
+    <h2>Your Tasks</h2>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Add new task..." required />
+      <button type="submit" class="btn primary">Add</button>
+    </form>
+
+    <ul id="todo-list"></ul>
+  </main>
+
+  <script src="assets/js/todos.js"></script>
+</body>
+</html>
