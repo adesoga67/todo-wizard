@@ -2,7 +2,7 @@
     let todos = [
       {
         id: 1,
-        text: 'Welcome to TodoMVP! Click the checkbox to complete this task.',
+        text: 'Welcome to Todo Wizard! Click the checkbox to complete this task.',
         completed: false,
         createdAt: new Date().toISOString()
       }
