@@ -166,10 +166,21 @@
 
     .feature-icon {
       font-size: 3rem;
-      margin-bottom: 1rem;
-      display: inline-block;
+      margin-bottom: 1.5rem;
+      display: block;
       filter: grayscale(0.2);
       transition: transform 0.3s ease;
+      margin-top: -2.5rem;
+      margin-left: -2rem;
+      margin-right: -2rem;
+    }
+
+    .feature-icon img {
+      width: calc(100% + 4rem);
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+      display: block;
     }
 
     .feature:hover .feature-icon {
