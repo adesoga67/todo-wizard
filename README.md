@@ -1,27 +1,27 @@
-# 🧙‍♂️ Todo Wizard
+# Todo Wizard
 
 **Todo Wizard** is a modern, responsive, and intuitive web-based task management application designed to help users organize their daily activities efficiently.  
 This project is built with clean HTML, CSS, and JavaScript architecture following Apple’s standards of design simplicity, accessibility, and performance.
 
 ---
 
-## 📋 Overview
+## Overview
 
 Todo Wizard provides users with a sleek and minimal interface to create, manage, and track daily tasks effortlessly.  
 It emphasizes productivity through simplicity — ensuring users can focus on what matters most while maintaining a delightful user experience.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ **User Authentication** — Secure login and registration system  
-- 🗂️ **Task Management** — Add, edit, delete, and categorize to-do items  
-- 💾 **Persistent Storage** — Tasks saved locally or via backend integration  
-- 📱 **Responsive Design** — Fully optimized for mobile, tablet, and desktop  
-- 🎨 **Clean UI/UX** — Apple-style minimal interface with fluid transitions  
-- ⚡ **Fast Performance** — Lightweight static structure for quick load times  
+- **User Authentication** — Secure login and registration system  
+- **Task Management** — Add, edit, delete, and categorize to-do items  
+- **Persistent Storage** — Tasks saved locally or via backend integration  
+- **Responsive Design** — Fully optimized for mobile, tablet, and desktop  
+- **Clean UI/UX** — Apple-style minimal interface with fluid transitions  
+- **Fast Performance** — Lightweight static structure for quick load times  
 
-## 🛠️ Project Structure
+## Project Structure
 
 Todo Wizard/
 ├── auth.html          # User authentication page
@@ -30,14 +30,14 @@ Todo Wizard/
 ├── assets/            # (Optional) CSS, JS, images
 └── README.md          # Documentation
 
-## 💻 Technologies Used
+## Technologies Used
 
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript  
 - **Version Control:** Git & GitHub  
 - **Design Philosophy:** Minimalist UI inspired by Apple Human Interface Guidelines  
 - **Performance Optimization:** Semantic markup, lightweight assets, and responsive layout  
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Option 1 – Run Locally
 
@@ -65,7 +65,7 @@ You can deploy easily on:
 
 ---
 
-## 🧩 Customization
+## Customization
 
 Developers can extend or integrate Todo Wizard with backend APIs (Node.js, Firebase, etc.) by connecting the task management scripts in `main.html` to a data service layer.
 
@@ -80,7 +80,7 @@ Recommended structure:
 
 ---
 
-## 🧪 Testing & Validation
+## Testing & Validation
 
 - All components follow **HTML5 validation** and **CSS3 best practices**
 - Compatible with **Safari, Chrome, and Edge**
@@ -88,14 +88,14 @@ Recommended structure:
 
 ---
 
-## 🛡️ Privacy & Security
+## Privacy & Security
 
 Todo Wizard does **not collect personal data** by default.
 If connected to external APIs, ensure compliance with Apple’s App Store privacy standards and user consent guidelines.
 
 ---
 
-## 👥 Author
+## Author
 
 **Developer:** [Adesoga Victor Michael]
 **Email:** [[adesogavictor67@gmail](mailto:adesogavictor67@gmail.com)]
@@ -105,7 +105,7 @@ If connected to external APIs, ensure compliance with Apple’s App Store privac
 
 ---
 
-## 🍏 Apple Submission Note
+## Apple Submission Note
 
 Todo Wizard aligns with Apple’s core design principles:
 
@@ -114,14 +114,3 @@ Todo Wizard aligns with Apple’s core design principles:
 - Consistency and performance
 
 It has been structured for easy review, modular maintenance, and future integration with Apple ecosystem technologies such as **Safari Extensions**, **iCloud sync**, or **PWA support**.
-
----
-
----
-
-Would you like me to:
-
-- 🔹 Fill in your **developer details (name, email, GitHub link)**, and  
-- 🔹 Generate the `.md` file for download?  
-
-Once you confirm, I’ll produce the finalized `README.md` ready for submission.
